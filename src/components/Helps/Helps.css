@@ -1,0 +1,82 @@
+/* スマホレスポンシブ対応 */
+@media screen and (min-width: 320px) {
+
+    /* ■■■■■■■■■■ Help.jsx Css ■■■■■■■■■■ */
+    .help-wrapper_category {
+        text-align: center;
+        margin: 50px 10px 50px 10px;
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .help-wrapper_section_heading {
+        margin-top: 32px;
+    }
+
+    .help-wrapper_left {
+        margin-right: 2em; /*--AとBの余白--*/
+        text-align: left;
+    }
+
+    .help-wrapper_right {
+        flex-grow: 1; /*--幅を指定--*/
+        text-align: left;
+    }
+
+    .help-wrapper_section_title {
+        padding: 5px 0;
+    }
+    /* ■■■■■■■■■■ End Help.jsx Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ Format.jsx Css ■■■■■■■■■■ */
+    .help-format_category {
+        text-align: center;
+        margin: 50px 10px 50px 10px;
+        background-color: #fff;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .help-format_section_heading {
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    hr {
+        border-top: 1px solid #000;
+    }
+    /* ■■■■■■■■■■ End Format.jsx Css ■■■■■■■■■■ */
+
+}
+
+/* PCレスポンシブ対応 */
+@media screen and (min-width: 1024px) {
+
+    /* ■■■■■■■■■■ Help.jsx Css ■■■■■■■■■■ */
+    .help-wrapper_category {
+        margin: 100px;
+        padding: 32px;
+        flex-direction: row;
+    }
+
+    .help-wrapper_left, .help-wrapper_right {
+        flex: 1;
+    }
+
+    /* ■■■■■■■■■■ End Help.jsx Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ Format.jsx Css ■■■■■■■■■■ */
+    .help-format_category {
+        margin: 100px;
+        padding: 32px;
+    }
+
+    .help-format_section_heading {
+        font-size: 32px;
+    }
+    /* ■■■■■■■■■■ End Format.jsx Css ■■■■■■■■■■ */
+
+}

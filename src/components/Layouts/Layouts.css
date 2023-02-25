@@ -1,0 +1,340 @@
+/* スマホレスポンシブ対応 */
+@media screen and (min-width: 320px) {
+    /* ■■■■■■■■■■ Header Css ■■■■■■■■■■ */
+    a:focus {
+        z-index: 11000;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .header-logo {
+        width: 180px;
+    }
+
+    .btn-rounded {
+        border-radius : 1000px;
+    }
+
+    .login__btn, .post__btn {
+        background-color: #303F9F;
+        color: #fff;
+    }
+
+    .register__btn {
+        background-color: #80CBC4;
+        color: #fff;
+    }
+
+    .navbar {
+        background-color: #fff;
+    }
+
+    .nav-link:hover {
+        color: #000;
+        background-color: #efefef;
+    }
+
+    .toggler__txt {
+        display : block;
+        font-size : 0.5em;
+        color: #fff;
+    }
+
+    .nav-item.active a:hover {
+        background-color: #03cfcf;
+    }
+
+    .nav__main, .nav__sub {
+        font-size : 1em;
+    }
+
+    .navbar.navbar-light .breadcrumb .nav-item.active>.nav-link,
+    .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+        background-color: #efefef;
+        border-bottom : none;
+    }
+    /* ■■■■■■■■■■ End Header Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ SubHeader Css ■■■■■■■■■■ */
+    .subheader-title {
+        background-color: #bbe0dc;
+        padding: 0.5rem 1rem;
+    }
+
+    .subheader-attention {
+        display: flex;
+        background-color: #c45959;
+        padding: 0.5rem 5rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .subheader-attention p, .subheader-attention a {
+        color: #fff;
+        margin: 0 1rem;
+        z-index: 999;
+    }
+
+    .subheader-attention a {
+        border-bottom: 1px solid #fff;
+    }
+
+    .profile-name {
+        margin: 0 1rem;
+        font-weight: 600;
+        color: #303F9F;
+    }
+    /* ■■■■■■■■■■ End SubHeader Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ Footer Css ■■■■■■■■■■ */
+    footer {
+        background: #fff;
+        padding: 0 0 30px;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .footer-logo {
+        width: 240px;
+    }
+
+    .footer-menu h2 {
+        text-align: center;
+        max-width: 1500px;
+        margin: 20px auto;
+        color:#000;
+    }
+
+    .footer-menu nav {
+        margin: 20px 60px;
+    }
+
+    .footer-guide {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-guide nav ul li button {
+        background: none;
+        border: none;
+    }
+
+    .footer-guide a{
+        color: #000;
+    }
+
+    .footer-guide a:hover{
+        text-decoration: none;
+        color: #aaa;
+    }
+
+    .footer-texts {
+        font-size: 1rem;
+    }
+
+    .footer-trademark {
+        text-align: center;
+        margin: 20px auto;
+        font-size: 17px;
+        color: #000;
+    }
+    /* ■■■■■■■■■■ End Footer Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ Search_Bar Css ■■■■■■■■■■ */
+    .card {
+        border: none;
+        background: #EDEDED;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: auto;
+        margin-top: 10px;
+        height: 40px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .search-input {
+        color: white;
+        border: 0;
+        outline: 0;
+        background: none;
+        width: 0;
+        margin-top: 0px;
+        caret-color: transparent;
+        line-height: 20px;
+        transition: width 0.4s linear;
+    }
+
+    .search .search-input {
+        padding: 0 5px;
+        width: 100%;
+        caret-color: #303F9F;
+        font-size: 13px;
+        font-weight: 400;
+        color: black;
+        transition: width 0.4s linear;
+    }
+
+    .engine-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-icon {
+        height: 25px;
+        width: 25px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #303F9F;
+        font-size: 10px;
+        bottom: 25px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .search-icon:hover {
+        color: #fff !important;
+    }
+
+    .search-bottomHr {
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .card-inner {
+        position: relative;
+        margin: 0 5px;
+        height: 120px;
+        justify-content: center;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: .25rem;
+        border:none;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .card-inner:hover{
+        transform: scale(1.1);
+    }
+
+    .mg-text span{
+        font-size: 12px;
+    }
+
+    .mg-text{
+        line-height: 14px;
+    }
+
+    .scrollContents {
+        height: 170px;
+        padding: 20px 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+    }
+
+    .question-image, .community-image {
+        margin: 0 auto;
+        width: 200px;
+    }
+    /* ■■■■■■■■■■ End Search_Bar Css ■■■■■■■■■■ */
+}
+
+/* PCレスポンシブ対応 */
+@media screen and (min-width: 1024px) {
+    /* ■■■■■■■■■■ Header Css ■■■■■■■■■■ */
+    .header-logo {
+        width: 300px;
+    }
+
+    .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+        background-color: transparent;
+        border-bottom: 3px solid #303F9F;
+    }
+
+    .nav-link:hover {
+        border-bottom: 3px solid #303F9F;
+        background-color: #fff;
+    }
+
+    .nav__main {
+        font-size: 1.2em;
+    }
+
+    .nav__sub {
+        font-size: 0.8em;
+    }
+    /* ■■■■■■■■■■ End Header Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ SubHeader Css ■■■■■■■■■■ */
+    .subheader-title {
+        padding: 0.5rem 5rem;
+    }
+    /* ■■■■■■■■■■ End SubHeader Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ Footer Css ■■■■■■■■■■ */
+    footer {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        width: 300px;
+    }
+
+    .footer-guide {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-trademark {
+        font-size: 20px;
+    }
+    /* ■■■■■■■■■■ End Footer Css ■■■■■■■■■■ */
+
+    /* ■■■■■■■■■■ Search_Bar Css ■■■■■■■■■■ */
+    .search {
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    .search-input {
+        margin-top: 5px;
+    }
+
+    .search .search-input {
+        padding: 0 10px;
+        font-size: 19px;
+        font-weight: 300;
+    }
+
+    .engine-wrapper {
+        padding: 0 3rem;
+    }
+
+    .search-icon {
+        height: 34px;
+        width: 34px;
+        bottom: 30px;
+    }
+
+    .question-image, .community-image {
+        width: 500px;
+    }
+    /* ■■■■■■■■■■ End Search_Bar Css ■■■■■■■■■■ */
+}

@@ -1,0 +1,358 @@
+/* ■■■■■■■■■■ Inquiry.jsx Css ■■■■■■■■■■ */
+
+
+.bl-sect05 {
+    margin-top: 5rem;
+}
+
+.ly-cont {
+    margin: 0 auto;
+    max-width: 1088px;
+    width: calc(100% - 200px);
+}
+
+.un-step {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    height: 60px;
+    margin-bottom: 60px;
+}
+
+.un-step-item.is-current {
+    background-color: #0da8b1;
+    color: #fff;
+}
+
+.un-step-item:first-child {
+    border-radius: 4px 0 0 4px;
+    padding-left: 7px;
+}
+
+@media screen and (min-width: 1024px) {
+    .un-step-item {
+        flex-direction: row;
+        font-size: 1em;
+    }
+}
+
+.un-step-item {
+    align-items: center;
+    color: #707070;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: .75em;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.75;
+    padding-left: 18px;
+    position: relative;
+    text-align: center;
+}
+
+.un-step-item:after, .un-step-item:before {
+    border-color: #ddd;
+    border-width: 0;
+    border-left: 18px solid transparent;
+    border-left-color: #ddd;
+    border-bottom: 30px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 30px solid transparent;
+    content: '';
+    display: block;
+    height: 0;
+    left: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 0;
+    z-index: 1;
+}
+
+.un-step-item.is-current:after {
+    border-left-color: #0da8b1;
+}
+
+.un-step-item:after {
+    border-left-color: #f5f5f5;
+    margin-left: -1px;
+}
+
+@media screen and (min-width: 1024px) {
+    .un-step-item .step {
+        margin-right: 1em;
+    }
+    .un-step-item .step, .un-step-item .txt {
+        display: inline-block;
+    }
+}
+
+.un-step-item .step, .un-step-item .txt {
+    display: block;
+}
+
+.inquiry-title {
+    background-color: #bbe0dc;
+    padding: 10px 70px;
+}
+
+.inquiry-title h4 {
+    margin: 0;
+}
+
+.inquiry-form {
+    background-color: white;
+    margin: 5em 7em;
+    padding: 3em;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+.inquiry-contentTitle {
+    font-weight: 800;
+}
+
+.inquiry-btnDiv {
+    text-align: center;
+}
+
+.inquiry-formInputs {
+    background-color: whitesmoke;
+    padding: 2em;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+.required {
+    padding: 2px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.any {
+    padding: 2px;
+    background-color: gray;
+    color: white;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.inquiry-formInputs div {
+    margin: 5px 0;
+}
+
+.inquiry-formInputs div textarea {
+    resize: none;
+}
+
+.inquiry-radio {
+    margin-left: 10px;
+}
+
+.inquiry-wrapper button {
+    margin-top: 30px;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ■■■■■■■■■■ End Inquiry.jsx Css ■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■ InquiryConfirm.jsx Css ■■■■■■■■■■ */
+
+
+.inquiryConfirm-subtitle-first {
+    margin: 2em 0 0 0;
+}
+
+.inquiryConfirm-subtitle-second {
+    margin: 0 0 2em 0;
+}
+
+.inquiryConfirm-wrapper button {
+    margin: 30px 10px 0 10px;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+.inquiryConfirm-form {
+    background-color: white;
+    margin: 5em 7em;
+    padding: 3em;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+.inquiryConfirm-fontBold {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.inquiryConfirm-fix {
+    background-color: rgb(255, 107, 107)!important;
+}
+
+
+/* ■■■■■■■■■■ End InquiryConfirm.jsx Css ■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■ End InquiryThanks.jsx Css ■■■■■■■■■■ */
+
+
+.inquiryThanks-form {
+    background-color: white;
+    margin: 7em 30em;
+    padding: 3em;
+    border: solid 1px gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.inquiryThanks-wrapper button {
+    margin: 30px 10px 0 10px;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ■■■■■■■■■■ End InquiryThanks.jsx Css ■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■ InquiryManagementForm.jsx Css ■■■■■■■■■■ */
+
+
+.inquiryManagementForm-btnWrapper button{
+    margin: 30px 10px 0 10px;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    width: 70%;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+    
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.content-show {
+    height: 200px;
+}
+
+
+.inline-radio {
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #b6b6b6;
+}
+
+.inline-radio div {
+    position: relative;
+    flex: 1;
+}
+
+.inline-radio input {
+    width: 100%;
+    height: 60px;
+    opacity: 0;
+}
+
+.inline-radio label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #b6b6b6;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    border-right: 1px solid #b6b6b6;
+}
+
+.inline-radio div:last-child label {
+    border-right: 0;
+}
+
+.inline-radio input:checked + label {
+    background: #303F9F;
+    font-weight: 500;
+    color: #fff;
+}
+
+.table-title th:nth-child(1) {
+    width: 5rem;
+}
+
+.table-title th:nth-child(2) {
+    width: 7.5rem;
+}
+
+.table-title th:nth-child(3) {
+    width: 8rem;
+}
+
+.table-title th:nth-child(4) {
+    width: 10.5rem;
+}
+
+.table-title th:nth-child(5) .table-title th:nth-child(7) {
+    width: 5.5rem;
+}
+
+.table-title th:nth-child(6) {
+    width: 42rem;
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+}
+
+.paginator button {
+    margin: 30px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ■■■■■■■■■■ End InquiryManagementForm.jsx Css ■■■■■■■■■■ */

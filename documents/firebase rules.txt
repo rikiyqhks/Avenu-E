@@ -1,0 +1,75 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+  	// アカウントの所持の確認関数
+  	function isAuthenticated() {
+    	return request.auth != null;
+    }
+
+    // スクラップスキーマ検証
+    function isValidScrap(field) {
+    	return field.size() == 11
+      && 'id' in field && field.id is string
+      && 'uid' in field && field.uid is string
+      && 'title' in field && field.title is string
+      && 'content' in field && field.content is string
+      && 'createAt' in field && field.createAt is string
+      && 'languags' in field && field.languages is list
+      && 'others' in field && field.others is list
+      && 'goods' in field && field.goods is int
+      && 'likes' in field && field.likes is int
+      && 'userName' in field && field.userName is string
+      && 'userIcon' in field && field.userIcon is string
+    }
+
+  	// ユーザードキュメントのセキュリティルール
+    match /users/{userid} {
+    	// アカウントの所持かつUIDの整合性の確認、Trueの場合のみ許可
+      allow read: if true;
+      allow create: if true;
+      allow update: if true;
+      allow delete: if isAuthenticated();
+    }
+
+    // スクラップドキュメントのセキュリティルール
+    match /scraps/{scrapid} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated();
+      allow delete: if isAuthenticated();
+    }
+    
+    // パッケージドキュメントのセキュリティルール
+    match /packages/{packageid} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated();
+      allow delete: if isAuthenticated();
+    }
+    
+    // 問い合わせドキュメントのセキュリティルール
+    match /inquiries/{inquiryid} {
+      allow read: if true;
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated();
+      allow delete: if isAuthenticated();
+    }
+    
+    // ヘルプドキュメントのセキュリティルール
+    match /helps/{helpid} {
+      allow read: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+    
+    // 言語ドキュメントのセキュリティルール
+    match /languages/{languageid} {
+      allow read: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

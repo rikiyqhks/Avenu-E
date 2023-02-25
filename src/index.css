@@ -1,0 +1,107 @@
+/* ↓index.css ... Reset ALL Css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.gland {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.shadow {
+    box-shadow: 10px 10px 2px 1px rgb(212, 212, 212);
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+@media screen and (min-width: 320px) {
+    .heading {
+        text-align: center;
+    }
+    
+    .heading span {
+        font-size: 15px;
+        color: #303F9F;
+    }
+
+    .heading h2 { 
+        position: relative;
+        font-weight: bold;
+        font-size: 10px;
+        padding: 30px;
+        display: inline-block;
+    }
+    
+    .heading h2::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: #ddd;
+        bottom: 1px;
+        left: calc(50% - 60px);
+    }
+    
+    .heading h2::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #303F9F;
+        bottom: 0;
+        left: calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heading span {
+        font-size: 40px;
+    }
+
+    .heading h2 { 
+        font-size: 22px;
+        margin-bottom: 30px;
+        padding: 50px;
+    }
+    
+    .heading h2::after {
+        height: 3px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heading span {
+        font-size: 45px;
+    }
+
+    .heading h2 { 
+        font-size: 24px;
+    }
+}

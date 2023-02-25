@@ -1,0 +1,364 @@
+/* ■■■■■■■■■■ Package.jsx Css ■■■■■■■■■■ */
+
+
+.package-wrapper {
+    max-width: 1140px;
+    margin: 1rem auto;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.package-wrapper button {
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+.package-title {
+    position: relative;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.package-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.package-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #80CBC4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.package-masterUserIcon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-wrapper {
+        flex-basis: 100%;
+        max-height: 100%;
+        min-height: 200px;
+        height: auto;
+    }
+}
+
+.portfolio-card {
+    padding: 3px;
+    margin: 1px;
+    display: flex;
+    flex-basis: 49%;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+    text-align: left;
+    height: 310px;
+}
+
+.portfolio-thumnail {
+    flex: 1 0 30%;
+    text-align: center;
+}
+
+.portfolio-detail {
+    padding-left: 3px;
+}
+
+.portfolio-image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.portfolio-note {
+    font-size: 0.8em;
+    margin: auto 1rem;
+}
+
+.portfolio-overview {
+    padding: 6px;
+    font-size: 0.7em;
+}
+
+.head-title-middle {
+    font-size: 20px;
+    padding-top: 7px;
+}
+
+.head-title {
+    color: #37517e;
+    font-weight: bold;
+}
+
+.tags-listItem {
+    line-height: 14px;
+    color: #333;
+    background: #efefef;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    font-weight: 400;
+    font-size: 10px;
+    margin-right: 2px;
+    display: inline-block;
+    padding: 0.25em 0.7em;
+}
+
+span.line {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+span.line::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+}
+
+.andMore {
+    margin: 3rem 0;
+    padding: 0.8rem 12rem !important;
+    border-radius: 1rem !important;
+}
+
+.createPost {
+    margin-top: 200px;
+    color: #000;
+}
+
+.post {
+    width: 100vh;
+    margin: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 30px;
+    border-radius: 10px;
+    min-width: 500px;
+    background-color: white;
+}
+  
+.postTitle {
+    font-size: 30px;
+    margin-top: 6px;
+}
+  
+.postContent {
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* ■■■■■■■■■■ End Package.jsx Css ■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■ PackagePost.jsx Css ■■■■■■■■■■ */
+
+.package-base {
+    background-color: #FFF;
+    padding: 100px;
+}
+
+.package-contents {
+    margin-bottom: 30px;
+}
+
+.package-contents p {
+    margin-top: 10px;
+}
+
+.package-must, .package-free {
+    margin-bottom: 10px;
+}
+
+.form-control, .status-control {
+    margin-top: 10px;
+}
+
+.preview-thumbnail {
+    width: 16rem;
+    height: 10rem;
+    background-color: #EAEAEA;
+    border: 1px dashed #CCCCCC;
+    cursor: pointer;
+}
+
+.packagerequired {
+    background-color: rgb(255, 155, 155);
+    padding: 3px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+/* 必須マーク */
+.package-must {
+	background-color: #FF1A00;
+}
+
+/* 任意マーク */
+.package-free {
+	background: #999;
+}
+
+.package-must,
+.package-free {
+	color: #FFF;
+	border-radius: 3px;
+	font-size: 12px;
+	margin-right: 10px;
+	padding: 5px 10px;
+	letter-spacing: 0.2em;
+}
+
+.packageFree {
+    background-color: rgb(110, 110, 110);
+    padding: 3px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+.me-2 {
+    margin-bottom: 10px;
+}
+
+
+/* ■■■■■■■■■■ End PackagePost.jsx Css ■■■■■■■■■■ */
+
+
+/* ■■■■■■■■■■ PackageDetail.jsx Css ■■■■■■■■■■ */
+
+
+.packageDetail-wrapper {
+    max-width: 1140px;
+    margin: 3rem auto;
+    text-align: center;
+    padding: 3rem 5px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.packageDetail-wrapper button {
+    padding: 7px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(123, 123, 123, 0.1), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-color: #80CBC4;
+    color: white;
+    cursor: pointer;
+}
+
+.packageDetail-title {
+    position: relative;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.packageDetail-thumbnail {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.packageDetail-summary {
+    margin-top: 20px ;
+    padding: 20px 100px;
+}
+
+.summary-head, .skill-head {
+    display: flex;
+    justify-content: center;
+}
+
+.summary-head i, .skill-head i {
+    width: 48px;
+    height: 48px;
+    font-size: 2.8em;
+    margin: 5px;
+} 
+
+.packageDetail-feedback {
+    margin: 20px 0;
+}
+
+.overview-head, .feedback-head, .story-head, .link-head, .movie-head, .system-head {
+    margin: 20px 0;
+    position: relative;
+}
+
+.overview-head-title, .skill-head-title, .story-head-title, .link-head-title, .movie-head-title, .system-head-title {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+
+.packageDetail-title::before, .overview-head-title::before, .skill-head-title::before, .story-head-title::before, 
+.link-head-title::before, .movie-head-title::before, .system-head-title::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.packageDetail-title::after, .overview-head-title::after, .skill-head-title::after,
+.story-head-title::after, .link-head-title::after, .movie-head-title::after, .system-head-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #80CBC4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+
+/* ■■■■■■■■■■ End PackageDetail.jsx Css ■■■■■■■■■■ */
